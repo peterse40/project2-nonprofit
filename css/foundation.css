@@ -458,6 +458,7 @@ button {
 
 .column, .columns {
   width: 100%;
+  background-color
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem; }
@@ -1305,7 +1306,8 @@ li {
 
 ul {
   list-style-type: disc;
-  margin-left: 1.25rem; }
+  margin-left: 1.25rem;
+  background-color: #222 }
 
 ol {
   margin-left: 1.25rem; }
@@ -3428,7 +3430,8 @@ table.hover tbody tr:nth-of-type(even):hover {
             transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.5rem; }
+  padding: .5rem;
+  margin-left: -20px; }
   .top-bar::before, .top-bar::after {
     content: ' ';
     display: table; }
@@ -3436,7 +3439,7 @@ table.hover tbody tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #222; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }

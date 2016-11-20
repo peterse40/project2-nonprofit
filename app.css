@@ -1,3 +1,10 @@
+@import 'foundation';
+@import 'normalize';
+
+ // @include foundation-grid;
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+
 
 /* ******************************************************************
 GENERAL
@@ -21,39 +28,45 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Raleway', sans-serif;
 	font-size:  100%;
+	color: 222;
 }
 
 .off-canvas-wrapper {
-	background-color: #255;
-}
-
-.welcome-box {
-	@extend .show-for-medium-up;
-	@include grid-column(12);
-}
-
-.top-banner {
-	@include grid-column(12);
-}
-
-.top-image {
-	@include grid-column(12);
-}
-
-#top-bar {
-	@extend .hide-for-medium-up;
-}
-
-.contacts {
-	@include grid-row();
+	background-color: #225;
 }
 
 /* ******************************************************************
 NAV - MOBILE
 ******************************************************************* */
 
+.title-bar {
+	background-color: #222;
+	height: 60px;
+	padding-top: 17px;
+}
 
+#mobile-menu {
+	background-color: #222;
+	padding: 10px;
+}
 
+#mobile-menu li {
+	list-style: none;
+}
+
+#mobile-menu a {
+	color: rgba(255,255,255,0.6);
+	font-weight: bold;
+	line-height: 2;
+}
+
+#mobile-menu a:hover {
+	color: rgba(255,255,255,0.8);
+}
+
+.js-off-canvas-exit {
+	background: rgba(0,0,0,0.5);
+}
 
 /* ******************************************************************
 NAV - DESKTOP
@@ -105,6 +118,13 @@ NAV - DESKTOP
 /* ******************************************************************
 HERO
 ******************************************************************* */
+
+.hero {
+	background-color: #999;
+	padding: 80px 0px;
+	height: auto;
+	background-image: url("../images/stardust.png");
+}
 
 .hero h1 {
 	color: rgba(255, 255, 255, 0.8);
@@ -303,29 +323,21 @@ MEDIA QUERY
 	}
 }
 
-@media *($small-only) {
-	.top-image {
-		@include grid-column(12);
-	}
-}
 
-@media *($medium-only) {
-	.top-image {
-		@include grid-column(6);
-	}
-}
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
 
-@media *(medium-up) {
-	body {
-		background-color: #fafafa;
-	}
-}
+/* Medium and up */
+@media screen and (min-width: 40em) {}
 
-#welcome {
-	color: ivory;
-}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
 
+/* Large and up */
+@media screen and (min-width: 64em) {}
 
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 
 
 
