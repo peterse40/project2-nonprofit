@@ -6,6 +6,25 @@ GENERAL
 	outline: none;
 }
 
+@charset "utf-8";
+/* CSS Document */
+
+img{	
+display:block;
+}
+
+.scrollup {	
+    width:40px;
+    height:40px;
+    opacity:0.5;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url(Images/icon_top.jpg) no-repeat;
+}
+
 html {
 	-webkit-text size adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -331,3 +350,27 @@ MEDIA QUERY
 
 
 
+
+
+#scrollTop {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	background: #000;
+	color: #fff;
+	padding: 5px;
+	text-decoration: none;
+	border-radius: 10px;
+	opacity: .2;
+	display: none;
+}
+
+#scrollTop span {
+	display: block;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#scrollTop:hover {
+0,0,0,.5);
+}
