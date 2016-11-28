@@ -4,6 +4,7 @@ GENERAL
 ******************************************************************* */
 * {
 	outline: none;
+	font-size: xx-large;
 }
 
 @charset "utf-8";
@@ -32,7 +33,6 @@ html {
 }
 .wrap {
 	width: 100%;
-	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -67,51 +67,10 @@ body {
 	@include grid-row();
 }
 
-/* ******************************************************************
-NAV - MOBILE
-******************************************************************* */
-
-
-
 
 /* ******************************************************************
 NAV - DESKTOP
 ******************************************************************* */
-
-.concentration {
-	color: white;
-	font-style: italic;
-	font-size: 20px;
-}
-
-.nav-desktop {
-	background-color: #222;
-	height: 80px;
-	padding: 0;
-}
-
-.site-logo {
-	color: white;
-	line-height: 0px;
-	margin-top: 15px;
-}
-
-.nav-desktop .menu {
-	line-height: 80px;
-	background-color: transparent;
-}
-
-.menu > li > a {
-	display: inline-block;
-	line-height: 80px;
-	padding-bottom: 0;
-	padding-top: 0;
-	color: white;
-}
-
-.cursive-header {
-	font-style: italics;
-}
 
  p {
     margin: 0 auto;
@@ -121,48 +80,63 @@ NAV - DESKTOP
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ******************************************************************
-HERO
-******************************************************************* */
-
-.hero h1 {
-	color: rgba(255, 255, 255, 0.8);
-	max-width: 70%;
+.top-bar {
+	height: 90px;
+	padding-top: 10px;
+	padding-left: 10px;
 }
 
+.top-bar img {
+	margin-top:2px;
+	margin-left: 2px;
+	margin-bottom: -15px;
+
+}
+
+.top-bar-section .right {
+	padding-top: 10px;
+}
+
+.top-bar h1 {
+	color: rgba(225,225,225,8);
+	font-size: 2em;
+	display: inline-block;
+}
+
+/* ******************************************************************
+	MAIN SECTION
+******************************************************************* */
+
 .wrap p {
-	color: rgba(255, 255, 255, 0.8);
-	max-width: 70%;
+	color: rgba(0,0,0,0.5);
+	max-width: 100%;
 }
 
 .button.success {
 	background-color: purple;
 }
 
-h3 {
+h4, h5 {
 
 	font-weight: bold;
 	color: #868;
 	margin-bottom: 3px;
+	text-align: center;
 }
 
 div {
 
 	text-align: justify;
 	text-justify: inter-word;
-	padding-right: 20px;
+	margin-bottom: 10px;
 }
 
 /* ******************************************************************
-MAIN SECTION
+MAIN SECTION 2
 ******************************************************************* */
 .main {
 	padding: 80px 0px;
 	color: rgba(255,255,255,0.8);
-}
-
-.resume-portfolio h4 {
-	color: red;
 }
 
 .img-responsive {
@@ -170,22 +144,10 @@ MAIN SECTION
 	height: auto;
 }
 
-.float-left {
-	float: left;
-	clear: both;
-}
-
-.float-right {
-	float: left;
-	clear: both;
-	margin-top: -1200px;
-}
-
 div {
 
-	text-align: justify;
+	text-align: left;
 	text-justify: inter-word;
-	padding-right: 5px;
 }
 
 figcaption {
@@ -197,6 +159,18 @@ label {
 	color: rgba(255,255,255,0.8);
 }
 
+
+.panel.radius {
+    border-radius: 10px;   
+}
+
+.panel.radius #float-right span {
+	font-size: .5em;
+}
+
+.clearfix {
+	clear: both;
+}
 
 /* ******************************************************************
 FOOTER
@@ -235,6 +209,10 @@ FOOTER
 
 .column > a:hover {
 	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+	margin-top: 12px;
 }
 
 
