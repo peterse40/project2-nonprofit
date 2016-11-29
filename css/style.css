@@ -14,18 +14,6 @@ img{
 display:block;
 }
 
-.scrollup {	
-    width:40px;
-    height:40px;
-    opacity:0.5;
-    position:fixed;
-    bottom:50px;
-    right:100px;
-    display:none;
-    text-indent:-9999px;
-    background: url(Images/icon_top.jpg) no-repeat;
-}
-
 html {
 	-webkit-text size adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -131,9 +119,6 @@ div {
 	margin-bottom: 10px;
 }
 
-/* ******************************************************************
-MAIN SECTION 2
-******************************************************************* */
 .main {
 	padding: 80px 0px;
 	color: rgba(255,255,255,0.8);
@@ -148,11 +133,6 @@ div {
 
 	text-align: left;
 	text-justify: inter-word;
-}
-
-figcaption {
-
-	font-weight: bold;
 }
 
 label {
@@ -235,120 +215,4 @@ MEDIA QUERY
 	.wrap p {
 		width: 100%;
 	}
-}
-
-@media only screen and (max-width: 64.063em) {
-
-	.a.main-post-title, a.sub-post-title {
-		font-size: $main-titles-size-m;
-		line-height: $main-title-leading;
-	}
-
-	.sub-post {
-		text-align: center;
-	}
-
-	.sub-thumb {
-		margin: 0 auto $main-padding  auto;
-	}
-
-}
-
-@media only screen and (max-width: 40em) {
-
-	.main-post {
-		text-align: center;
-		margin-bottom: $main-padding;
-	}
-
-	p {
-		font-size: 1em;
-	}
-
-	.menu-icon {
-		display: inline;
-	}
-
-	.trigger {
-		display: none;
-		width: 100%;
-		margin-top: $main-padding;
-	}
-
-	nav {
-		display: block;
-		clear: both;
-		width: 100%;
-		text-align: right;
-		margin-top: -45px;
-	}
-
-	.trigger a {
-		display: block;
-		width: 100%;
-		border-bottom: 1px solid $footer-color;
-		margin-right: $main-padding;
-		padding: $main-padding / 2 0;
-		text-align: left;
-	}
-
-}
-
-@media only screen and (min-width: 40em) {
-	.trigger {
-		display: block !important;
-	}
-}
-
-@media *($small-only) {
-	.top-image {
-		@include grid-column(12);
-	}
-}
-
-@media *($medium-only) {
-	.top-image {
-		@include grid-column(6);
-	}
-}
-
-@media *(medium-up) {
-	body {
-		background-color: #fafafa;
-	}
-}
-
-#welcome {
-	color: ivory;
-}
-
-
-
-
-
-
-
-
-
-#scrollTop {
-	position: fixed;
-	right: 25px;
-	bottom: 25px;
-	background: #000;
-	color: #fff;
-	padding: 5px;
-	text-decoration: none;
-	border-radius: 10px;
-	opacity: .2;
-	display: none;
-}
-
-#scrollTop span {
-	display: block;
-	font-size: 1.5em;
-	text-align: center;
-}
-
-#scrollTop:hover {
-0,0,0,.5);
 }
