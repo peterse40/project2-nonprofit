@@ -27,11 +27,12 @@ html {
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Raleway', sans-serif;
-	font-size:  100%;
+	font-size:  80%;
+	background-color: rgba(0,0,0,0.7);
 }
 
 .off-canvas-wrapper {
-	background-color: #255;
+	background-color: #fff;
 }
 
 .welcome-box {
@@ -55,7 +56,10 @@ body {
 	@include grid-row();
 }
 
-
+.float-right {
+	float: right;
+	clear: both;
+}
 /* ******************************************************************
 NAV - DESKTOP
 ******************************************************************* */
@@ -157,8 +161,9 @@ FOOTER
 ******************************************************************* */
 
 .footer {
-	background-color: #222;
-	padding: 80px 0px;
+	background-color: #804;
+	padding: 20px 0px;
+	
 }
 
 .column h4 {
@@ -167,32 +172,32 @@ FOOTER
 }
 
 .column hr {
-	border-color: rgba(255, 255, 255, 0.6);
+	border-color: rgba(255, 255, 255, 0.8);
 	margin: 10px 0;
 }
 
 .column a {
 	display: block;
-	color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 1);
 	font-size: 0.8em;
 }
 
 .column a {
 	display: block;
-	color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.9);
 }
 
 .column a span {
 	font-weight: bold;
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.9);
 }
 
 .column > a:hover {
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
-.logo {
-	margin-top: 12px;
+.footer-logo {
+	margin-top: 9px;
 }
 
 
@@ -200,7 +205,7 @@ FOOTER
 MEDIA QUERY
 ******************************************************************* */
 
-@media (max-width: 639px) {
+@media (max-width: 543px) {
 	
 	.nav-desktop {
 		display: none;
@@ -216,3 +221,13 @@ MEDIA QUERY
 		width: 100%;
 	}
 }
+@media screen and (min-width: 490px) {
+	.wrap {
+		width: 100%;
+	}
+	.inline-list{
+		text-align: left;
+	}
+
+}
+@media screen and (max-width: 39.9375em) {}
