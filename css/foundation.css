@@ -83,7 +83,7 @@ template {
    * Remove the gray background color from active links in IE 10.
    */
 a {
-  background-color: transparent; }
+  background-color: #804; }
 
 /**
    * Improve readability of focused elements when they are also in an
@@ -1248,7 +1248,9 @@ h2 {
   font-size: 1.25rem; }
 
 h3 {
-  font-size: 1.1875rem; }
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center; }
 
 h4 {
   font-size: 1.125rem; }
@@ -3066,8 +3068,8 @@ html.is-reveal-open body {
   position: relative; }
 
 .sticky {
-  position: absolute;
-  z-index: 0;
+  position: fixed;
+
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); }
 
@@ -3328,9 +3330,9 @@ table.hover tbody tr:nth-of-type(even):hover {
     box-shadow: 0 0 6px 1px rgba(33, 153, 232, 0.5); }
 
 .title-bar {
-  background: #0a0a0a;
-  color: #fefefe;
-  padding: 0.5rem; }
+  background: #223;
+    color: #fefefe;
+    padding: 0.5rem; }
   .title-bar::before, .title-bar::after {
     content: ' ';
     display: table; }
@@ -3428,7 +3430,8 @@ table.hover tbody tr:nth-of-type(even):hover {
             transform: translateY(-50%); }
 
 .top-bar {
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  background-color: #e6e6e6; }
   .top-bar::before, .top-bar::after {
     content: ' ';
     display: table; }
@@ -3436,7 +3439,7 @@ table.hover tbody tr:nth-of-type(even):hover {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #804; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
