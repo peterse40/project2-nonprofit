@@ -1,3 +1,4 @@
+/* Foundation 6 intergrated */
 
 /* ******************************************************************
 GENERAL
@@ -11,7 +12,7 @@ GENERAL
 /* CSS Document */
 
 img{	
-display:block;
+display: block;
 }
 
 html {
@@ -28,7 +29,11 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Raleway', sans-serif;
 	font-size:  80%;
-	background-color: rgba(0,0,0,0.2);
+	background-color: aliceblue;
+}
+
+button.alert, .button.alert {
+	border-radius: 15px;
 }
 
 .off-canvas-wrapper {
@@ -67,7 +72,7 @@ NAV - DESKTOP
  p {
     margin: 0 auto;
     width: 400px;
-    color: #000;
+    color: rgba(0,0,0,0.);
   }
 .menu > li > a:hover {
 	background-color: rgba(255, 255, 255, 0.1);
@@ -80,7 +85,7 @@ NAV - DESKTOP
 }
 
 .top-bar img {
-	margin-top:2px;
+	margin-top: 2px;
 	margin-left: 2px;
 	margin-bottom: -15px;
 
@@ -106,7 +111,8 @@ NAV - DESKTOP
 }
 
 .button.success {
-	background-color: purple;
+	background-color: #f04124;
+	border-radius: 10px;
 }
 
 h4, h5 {
@@ -141,12 +147,13 @@ div {
 }
 
 label {
-	color: rgba(255,255,255,0.8);
+	color: rgba(0,0,0,0.4);
 }
 
 
 .panel.radius {
-    border-radius: 10px;   
+    border-radius: 2px;
+    margin-top: -22px;   
 }
 
 .panel.radius #float-right span {
@@ -162,8 +169,9 @@ FOOTER
 ******************************************************************* */
 
 .footer {
-	background-color: #804;
+	background-color: aliceblue;
 	padding: 20px 0px;
+	margin-top: -25px;
 	
 }
 
@@ -178,7 +186,7 @@ FOOTER
 }
 
 .column a {
-	display: block;
+	display: inline-block;
 	color: rgba(255, 255, 255, 1);
 	font-size: 0.8em;
 }
@@ -201,12 +209,15 @@ FOOTER
 	margin-top: 9px;
 }
 
-
 /* ******************************************************************
 MEDIA QUERY
 ******************************************************************* */
 
-@media (max-width: 543px) {
+@media (max-width: 43px) {
+	.inline-list{
+		margin-right: 450px;
+		margin-top: 5px;
+	}
 	
 	.nav-desktop {
 		display: none;
@@ -222,13 +233,13 @@ MEDIA QUERY
 		width: 100%;
 	}
 }
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 476px) {
 	.wrap {
 		width: 100%;
 	}
 	.inline-list{
-		text-align: left;
+		margin-top: 5px;
 	}
 
 }
-@media screen and (max-width: 39.9375em) {}
+
